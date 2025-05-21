@@ -11,7 +11,8 @@
     />
   </head>
 
-  <body id="body-chat">
+  <body>
+    <div id="chat-wrapper">	  
     <div id="chat-container">
       <div id="chat-header">
         <div id="header-img">
@@ -72,25 +73,26 @@
       </div>
     </div>
     <button id="open-button"><i class="fa-solid fa-comment"></i></button>
+    </div>
   </body>
   <style>
-    #body-chat {
-      font-family: SANS-SERIF;
+      #chat-wrapper {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 400px;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      height: 600px;
-      align-items: end;
-      margin: 0;
-      background-color: #f0f0f0;
-      padding-left: 1%;
-      padding-right: 1%;
-      align-self: bottom;
-      width: 400px;
-      justify-self: end;
-    }
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 10px;
+      z-index: 9999;
+      box-sizing: border-box;
+  }
 
     #chat-container {
-      width: 400px;
+      width: 100%;
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
